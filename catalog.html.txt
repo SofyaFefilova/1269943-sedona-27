@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Внутренняя</title>
+  </head>
+   <body>
+     <header>
+     <nav>
+     <a class="main header-logo" href="index.html">
+       <img src="https://via.placeholder.com/150x100" alt="Логотип City of Sedona">
+       <ul>
+         <li><a href="info.html">Информация</a></li>
+         <li><a href="photo.html">Фото и Видео</a></li>
+         <li><a href="maps.html">Карта Штата</a></li>
+         <li><a href="hotel.html">Гостиницы</a></li>
+       </ul>
+     </nav>
+     </header>
+     <main class="container">
+     <!--Здесь должен быть большой раздел, но я пока что не уметь-->
+     <section>
+     <div class="hotel-info">
+							<div class="info-header">
+                <img src="https://via.placeholder.com/150x100" alt="фото гостиницы">
+								<p class="info-title">Amara Resort & Spa</p>
+							</div>
+							<div class="info-main">
+								<p class="info-text">Гостиница</p>
+								<a class="info-link" href="#">Подробнее</a>
+							</div>
+							<div class="info-price">
+								<p class="info-text">От 4000 Р.</p>
+								<button class="info">Забронировать</button>
+							</div>
+					</div>
+							<div class="rating-stars stars">
+								<ul class="stars-icon">
+									<li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+									<li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+									<li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+									<li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+                </ul>
+							</div>
+              <div>
+							<p class="rating">Рейтинг:8,5</p>
+						</div>
+          </section>
+          <section>
+						<div class="hotel-info info">
+							<div class="info-header">
+                <img src="https://via.placeholder.com/150x100" alt="фото мотеля">
+								<p class="info-title">Desert Quail Inn</p>
+							</div>
+							<div class="info-main">
+								<p class="info-text">Мотель</p>
+								<a class="info-link" href="#">Подробнее</a>
+							</div>
+							<div class="info-price">
+								<p class="info-text">От 3000 Р.</p>
+								<button class="info">Забронировать</button>
+							</div>
+					</div>
+          <div class="rating-stars stars">
+            <ul class="stars-icon">
+            <li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+            <li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+            <li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+            </ul>
+							</div>
+              <div>
+							<p class="rating">Рейтинг:8,9</p>
+						</div>
+            </section>
+            <section>
+						<div class="hotel-info info">
+							<div class="info-header">
+                <img src="https://via.placeholder.com/150x100" alt="фото апартаментов">
+								<p class="info-title">Villas At Poco Diablo</p>
+							</div>
+							<div class="info-main">
+								<p class="info-text">Апартаменты</p>
+								<a class="info-link" href="#">Подробнее</a>
+							</div>
+							<div class="info-price">
+								<p class="info-text">От 2000 Р.</p>
+								<button class="info">Забронировать</button>
+							</div>
+						</div>
+            <div class="rating-stars stars">
+                <ul class="stars-icon">
+                <li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+                <li><img src="stars-icon-logo.svg" alt="иконка звезды"></li>
+                </ul>
+  							</div>
+                <div>
+                <p class="rating">Рейтинг:9,2</p>
+						</div>
+					</div>
+			</section>
+    </main>
+    <footer class="main-footer">
+      			<p class="footer-contacts">
+      			<a class="tag-link" href="#">#VisitSedona</a>
+      			Тел: +7(495) 666-02-66
+      			</p>
+         <div class="footer-social">
+           <ul>
+             <li><a class="social-button" href="#">Twitter</a></li>
+             <li><a class="social-button" href="#">Facebook</a></li>
+             <li><a class="social-button" href="#">YouTube</a></li>
+           </ul>
+         </div>
+        <p class="footer-copyright">
+          <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
+         </p>
+        </footer>
+      </body>
+    </html>
