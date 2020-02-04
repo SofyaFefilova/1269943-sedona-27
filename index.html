@@ -100,10 +100,18 @@
                 <p class="search-adult search-kids">
                     <label for="search-adult">
                         Взрослые: </label>
-                    <input id="search-adult" type="radio" name="adult" value="" placeholder="2">
+                    <select name="adult" id="search-adult">
+                        <option value="">1</option>
+                        <option value="" selected>2</option>
+                        <option value="">3</option>
+                    </select>
                     <label for="search-kids">
                         Дети:</label>
-                    <input id="search-kids" type="radio" name="kids" value="" placeholder="0">
+                    <select name="kids" id="search-kids">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
                 </p>
                 <button class="button" type="submit">Найти</button>
             </form>
