@@ -10,7 +10,7 @@
     <header class="catalog">
         <nav>
             <a class="logo">
-            <img src="img/logo-sedona.svg" width="140" height="72"  alt="Логотип City of Sedona">
+                <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of Sedona">
             </a>
             <ul>
                 <li><a href="#">Информация</a></li>
@@ -22,7 +22,7 @@
     </header>
     <main class="content">
         <div class="background-logo">
-          <img src="img/intro-welcome.svg" width="459" height="353"  alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!"/>
+            <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!" />
             <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -85,18 +85,40 @@
                 <a class="button" href="#">Поиск гостиницы в Седоне</a>
             </div>
         </section>
-        <!--Здесь должно быть окно с датой заезда, но я не уметь-->
+        <section class="search">
+            <form class="search" method="post">
+                <p class="search-arrival">
+                    <label for="search-arrival">
+                        Дата заезда: </label>
+                    <input id="search-arrival" type="text" name="arrival" value="" placeholder="24 апреля 2017">
+                </p>
+                <p class="search-departure">
+                    <label for="search-departure">
+                        Дата выезда: </label>
+                    <input id="search-departure" type="text" name="departure" value="" placeholder="4 июля 2017">
+                </p>
+                <p class="search-adult search-kids">
+                    <label for="search-adult">
+                        Взрослые: </label>
+                    <input id="search-adult" type="radio" name="adult" value="" placeholder="2">
+                    <label for="search-kids">
+                        Дети:</label>
+                    <input id="search-kids" type="radio" name="kids" value="" placeholder="0">
+                </p>
+                <button class="button" type="submit">Найти</button>
+            </form>
+        </section>
     </main>
     <footer class="main-footer">
         <div class="footer-contacts">
-      			<a class="tag-link" href="#">#VisitSedona</a>
-      			<a href="tel:+74956660266">tel:+74956660266</a>
-      </div>
+            <a class="tag-link" href="#">#VisitSedona</a>
+            <a href="tel:+74956660266">tel:+74956660266</a>
+        </div>
         <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#">Twitter</a><img src="img/twitter.svg" width="46" height="48" alt="твиттер"></li>
-              <li><a class="social-button" href="#">Facebook</a><img src="img/fb-icon.svg" width="46" height="48" alt="фейсбук"></li>
-              <li><a class="social-button" href="#">YouTube</a><img src="img/youtube.svg" width="46" height="48" alt="ютюб"></li>
+                <li><a class="social-button" href="#">Twitter</a><img src="img/twitter.svg" width="46" height="48" alt="твиттер"></li>
+                <li><a class="social-button" href="#">Facebook</a><img src="img/fb-icon.svg" width="46" height="48" alt="фейсбук"></li>
+                <li><a class="social-button" href="#">YouTube</a><img src="img/youtube.svg" width="46" height="48" alt="ютюб"></li>
             </ul>
         </div>
         <div class="footer-copyright">

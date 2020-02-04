@@ -10,7 +10,7 @@
     <header>
         <nav>
             <a class="logo" href="index.html">
-            <img src="img/logo-sedona.svg" width="140" height="72"  alt="Логотип City of Sedona">
+                <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of Sedona">
             </a>
             <ul>
                 <li><a href="#">Информация</a></li>
@@ -21,7 +21,36 @@
         </nav>
     </header>
     <main class="container">
-        <!--Здесь должен быть большой раздел, но я пока что не уметь-->
+        <section class="filters">
+            <form class="filter" method="post">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" name="Бассейн" checked>Бассейн</li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="Парковка"> Парковка</li>
+                        <li class="filter-option">
+                            <input type="checkbox" name="WI-FI">WI-FI</li>
+                    </ul>
+                </fieldset>
+            </form>
+            <form class="choice" method="get">
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li class="choice-option">
+                            <input type="checkbox" name="Гостиница" checked>Гостиница</li>
+                        <li class="choice-option">
+                            <input type="checkbox" name="Мотель" checked>Мотель</li>
+                        <li class="choice-option">
+                            <input type="checkbox" name="Аппартаменты" checked>Аппартаменты</li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+        <!--найдено:3 - это заголовок или вообще что...не понятно
+        Сортировка: по цене, по типу, по рейтингу - это тоже не понимаю, форма или что?-->
         <article class="info-main">
             <div class="info-header">
                 <img src="img/amara-resort.jpg" width="135" height="90" alt="фото гостиницы">
@@ -89,14 +118,14 @@
     </main>
     <footer class="main-footer">
         <div class="footer-contacts">
-      			<a class="tag-link" href="#">#VisitSedona</a>
-      			<a href="tel:+74956660266">tel:+74956660266</a>
-      </div>
+            <a class="tag-link" href="#">#VisitSedona</a>
+            <a href="tel:+74956660266">tel:+74956660266</a>
+        </div>
         <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#">Twitter</a><img src="img/twitter.svg" width="46" height="48" alt="твиттер"></li>
-              <li><a class="social-button" href="#">Facebook</a><img src="img/fb-icon.svg" width="46" height="48" alt="фейсбук"></li>
-              <li><a class="social-button" href="#">YouTube</a><img src="img/youtube.svg" width="46" height="48" alt="ютюб"></li>
+                <li><a class="social-button" href="#">Twitter</a><img src="img/twitter.svg" width="46" height="48" alt="твиттер"></li>
+                <li><a class="social-button" href="#">Facebook</a><img src="img/fb-icon.svg" width="46" height="48" alt="фейсбук"></li>
+                <li><a class="social-button" href="#">YouTube</a><img src="img/youtube.svg" width="46" height="48" alt="ютюб"></li>
             </ul>
         </div>
         <div class="footer-copyright">
