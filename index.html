@@ -4,15 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/normalize_min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
 </head>
 
-<body>
+<body class="wrapper-page">
     <header class="catalog">
         <nav>
             <a class="logo">
                 <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of Sedona">
             </a>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и Видео</a></li>
                 <li><a href="#">Карта Штата</a></li>
@@ -23,6 +26,7 @@
     <main class="content">
         <div class="background-logo">
             <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!" />
+            <img class="welcome-block-bottom" src="img/polygon.svg" width="1200" height="57" alt="" />
             <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -38,30 +42,30 @@
         </section>
         <section class="info-content-item">
             <div class="info-content-item">
-                <h3 class="info-content-item">Жилье</h3>
+                <h2 class="info-content-item">Жилье</h2>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                <img src="img/icon-1.svg" width="75" height="72" alt="иконка домика">
+                <img class="home" src="img/icon-1.svg" width="75" height="72" alt="иконка домика">
             </div>
             <div class="info-content-item">
-                <h3 class="info-content-item">Еда</h3>
+                <h2 class="info-content-item">Еда</h2>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                <img src="img/icon-3.svg" width="74" height="70" alt="иконка бургера">
+                <img class="eat" src="img/icon-3.svg" width="74" height="70" alt="иконка бургера">
             </div>
             <div class="info-content-item">
-                <h3 class="info-content-item">Сувениры</h3>
+                <h2 class="info-content-item">Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
-                <img src="img/icon-2.svg" width="64" height="76" alt="иконка подарка">
+                <img class="souvenirs" src="img/icon-2.svg" width="64" height="76" alt="иконка подарка">
             </div>
         </section>
         <section class="info-main">
             <div class="info-main">
-                <img src="img/devil-bridge.jpg" width="800" height="256" alt="Здесь мост Дьявола">
+                <img class="bridge" src="img/devil-bridge.jpg" width="800" height="256" alt="Здесь мост Дьявола">
                 <h2>Там есть Мост Дьявола</h2>
                 <span>— №2 —</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </section>
-        <section class="content-main">
+        <section class="content">
             <div class="content-main">
                 <h2>Небольшая площадь</h2>
                 <span>— №3 —</span>
@@ -80,42 +84,39 @@
         </section>
         <section class="info-travel">
             <div class="info-travel">
-                <h2>Заинтересовались?</h2>
+                <h3>Заинтересовались?</h3>
                 <p class="info-travel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <a class="button" href="#">Поиск гостиницы в Седоне</a>
             </div>
         </section>
-        <section class="search">
-            <form class="search" method="post">
-                <p class="search-arrival">
-                    <label for="search-arrival">
-                        Дата заезда: </label>
-                    <input id="search-arrival" type="text" name="arrival" value="" placeholder="24 апреля 2017">
-                </p>
-                <p class="search-departure">
-                    <label for="search-departure">
-                        Дата выезда: </label>
-                    <input id="search-departure" type="text" name="departure" value="" placeholder="4 июля 2017">
-                </p>
-                <p class="search-adult search-kids">
-                    <label for="search-adult">
-                        Взрослые: </label>
-                    <select name="adult" id="search-adult">
-                        <option value="">1</option>
-                        <option value="" selected>2</option>
-                        <option value="">3</option>
-                    </select>
-                    <label for="search-kids">
-                        Дети:</label>
-                    <select name="kids" id="search-kids">
-                        <option value="">0</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                </p>
-                <button class="button" type="submit">Найти</button>
+            <section class="map">
+                <form class="search-form " action="#" method="post">
+                    <label class="entry" for="date-of-entry">
+                        Дата заезда:
+                        <a class="date-entry" href="#"><span class="icon-calendar"></span></a>
+                    </label>
+                    <input type="text" name="date-of-entry" value="24 апреля 2016" id="date-of-entry">
+                    <label class="departure" for="date-of-departure">
+                      <br>
+                        Дата выезда:
+                        <a class="date-departure" href="#"><span class="icon-calendar"></span></a>
+                    </label>
+                    <input type="text" name="date-of-departure" value="4 июля 2016" id="date-of-departure">
+                  </form>
+            </section>
+            <form class="sum">
+              <div class="sum-adults">
+                <label for="adults">Взрослые:</label>
+                <button type="button" name="minus-adult"><span class="icon-minus"></span></button>
+                <input type="text" name="adults" value="2" id="adults">
+                <button type="button" name="plus-adult"><span class="icon-plus"></span></button>
+                <label for="children">Дети:</label>
+                <button type="button" name="minus-children"><span class="icon-minus"></span></button>
+                <input type="text" name="children" value="0" id="children">
+                <button type="button" name="plus-children"><span class="icon-plus"></span></button>
+              </div>
+            <button class="search-button" type="submit">Найти</button>
             </form>
-        </section>
     </main>
     <footer class="main-footer">
         <div class="footer-contacts">
