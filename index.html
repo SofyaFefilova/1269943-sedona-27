@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize_min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
 </head>
 
-<body class="wrapper-page">
+<body>
+  <div class="container-block">
     <header class="catalog">
-        <nav>
+        <nav class="main-navigation">
             <a class="logo">
                 <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of Sedona">
             </a>
@@ -23,14 +24,16 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
-        <div class="background-logo">
-            <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!" />
+    <main class="content-welcome">
+        <section class="welcome-block">
+            <img class="welcome-image" src="img/intro-welcome.svg" width="458" height="352" alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!" />
             <img class="welcome-block-bottom" src="img/polygon.svg" width="1200" height="57" alt="" />
+        </section>
+        <div class="background-logo">
             <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <section class="info-main">
+        <section class="info-head">
             <div class="info-main">
                 <h2>Настоящий городок</h2>
                 <span>- №1 -</span>
@@ -40,26 +43,30 @@
                 <img src="img/sedona.jpg" width="800" height="256" alt="Красивый вид на ресторан и горы в городе Седона">
             </div>
         </section>
-        <section class="info-content-item">
+        <section class="info-item">
             <div class="info-content-item">
-                <h2 class="info-content-item">Жилье</h2>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 <img class="home" src="img/icon-1.svg" width="75" height="72" alt="иконка домика">
+                <h2 class="info-content">Жилье</h2>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+
             </div>
             <div class="info-content-item">
-                <h2 class="info-content-item">Еда</h2>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 <img class="eat" src="img/icon-3.svg" width="74" height="70" alt="иконка бургера">
+                <h2 class="info-content">Еда</h2>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+
             </div>
             <div class="info-content-item">
-                <h2 class="info-content-item">Сувениры</h2>
-                <p>Не только китайского, но и местного производства!</p>
                 <img class="souvenirs" src="img/icon-2.svg" width="64" height="76" alt="иконка подарка">
+                <h2 class="info-content">Сувениры</h2>
+                <p>Не только китайского, но и местного производства!</p>
             </div>
         </section>
-        <section class="info-main">
-            <div class="info-main">
+        <section class="info-block">
+            <div class="img">
                 <img class="bridge" src="img/devil-bridge.jpg" width="800" height="256" alt="Здесь мост Дьявола">
+              </div>
+              <div class="info-main">
                 <h2>Там есть Мост Дьявола</h2>
                 <span>— №2 —</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -95,16 +102,12 @@
                         Дата заезда:
                         <a class="date-entry" href="#"><span class="icon-calendar"></span></a>
                     </label>
-                    <input type="text" name="date-of-entry" value="24 апреля 2016" id="date-of-entry">
+                    <input type="text" name="date-of-entry" value="24 апреля 2017" id="date-of-entry">
                     <label class="departure" for="date-of-departure">
-                      <br>
                         Дата выезда:
                         <a class="date-departure" href="#"><span class="icon-calendar"></span></a>
                     </label>
-                    <input type="text" name="date-of-departure" value="4 июля 2016" id="date-of-departure">
-                  </form>
-            </section>
-            <form class="sum">
+                    <input type="text" name="date-of-departure" value="4 июля 2017" id="date-of-departure">
               <div class="sum-adults">
                 <label for="adults">Взрослые:</label>
                 <button type="button" name="minus-adult"><span class="icon-minus"></span></button>
@@ -117,24 +120,26 @@
               </div>
             <button class="search-button" type="submit">Найти</button>
             </form>
+          </section>
     </main>
     <footer class="main-footer">
         <div class="footer-contacts">
-            <a class="tag-link" href="#">#VisitSedona</a>
+            <a class="tag-link" href="#">#VisitSedona</a><br>
             <a href="tel:+74956660266">tel:+74956660266</a>
         </div>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Twitter</a><img src="img/twitter.svg" width="46" height="48" alt="твиттер"></li>
-                <li><a class="social-button" href="#">Facebook</a><img src="img/fb-icon.svg" width="46" height="48" alt="фейсбук"></li>
-                <li><a class="social-button" href="#">YouTube</a><img src="img/youtube.svg" width="46" height="48" alt="ютюб"></li>
+                <li><a class="social-button" href="#"></a><img  src="img/twitter.png" width="46" height="48" alt="твиттер"></li>
+                <li><a class="social-button" href="#"></a><img  src="img/fb-icon.png" width="46" height="48" alt="фейсбук"></li>
+                <li><a class="social-button" href="#"></a><img  src="img/youtube.png" width="46" height="48" alt="ютюб"></li>
             </ul>
         </div>
         <div class="footer-copyright">
-            <p>Разработано:<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+            <p>website by:<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a></p>
             <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип академии">
         </div>
     </footer>
+  </div>
 </body>
 
 </html>
