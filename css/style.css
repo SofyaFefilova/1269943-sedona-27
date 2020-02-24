@@ -72,7 +72,7 @@ body {
     margin-left: -52px;
 }
 
-section {
+.element {
     display: flex;
     width: 1200px;
 }
@@ -318,11 +318,6 @@ section {
     background-repeat: no-repeat;
     border: 0;
 }
-
-a {
-    background-color: transparent;
-}
-
 .filters {
     box-sizing: border-box;
     min-height: 215px;
@@ -356,7 +351,7 @@ a {
     margin-bottom: 25px;
 }
 
-h2 {
+.type {
     color: #ffffff;
     font-family: "PT Sans", sans-serif;
     font-size: 21px;
@@ -529,7 +524,7 @@ h2 {
     margin: 0;
 }
 
-ul {
+.sort-list {
     padding: 0;
 }
 
