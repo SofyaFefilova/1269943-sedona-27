@@ -322,14 +322,14 @@ body {
     background-color: #f2f2f2;
     color: #a9a9a9;
 }
-.adults .minus-adult{
+.sum-adults button[name="minus-adult"]{
   margin-left: 40px;
 }
-.adults .plus-adult{
+.sum-adults button[name="plus-adult"]{
     margin-right: 52px;
 }
-.children .minus-children{
-    margin-left: 26px;
+.sum-adults button[name="minus-children"]{
+    margin-left: 27px;
 }
 
 .search-form input {
@@ -351,6 +351,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  padding-left: 15px;
 }
 .search-form > button {
     width: 458px;
@@ -389,9 +390,9 @@ body {
 }
 .infrastructure,
 .house-type{
-  float: left;
-  width: 240px;
-  box-sizing: border-box;
+    float: left;
+    width: 240px;
+    box-sizing: border-box;
 }
 .infrastructure h2,
 .house-type h2 {
@@ -450,17 +451,17 @@ body {
     padding-left: 200px;
 }
 .filter-cost-title{
-  margin-bottom: 11px;
-  font-size: 16px;
-  font-weight: bold;
+    margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: bold;
 }
 .control-cost {
-  position: relative;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  height: 32px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    height: 32px;
 }
 
 
@@ -485,8 +486,8 @@ body {
 }
 .control-cost .from,
 .control-cost .to{
-  width: 90px;
-  padding-left: 55px;
+    width: 90px;
+    padding-left: 55px;
 }
 .control-cost::after {
     position: absolute;
@@ -707,6 +708,7 @@ body {
     text-decoration: none;
     color: #000000;
     padding-left: 132px;
+    line-height: 26px;
 }
 .footer-social li {
   display: inline;
