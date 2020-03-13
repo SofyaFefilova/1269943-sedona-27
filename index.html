@@ -25,16 +25,16 @@
             </nav>
         </header>
         <main class="content-welcome">
-            <section class="welcome-block element">
+            <div class="welcome-block">
                 <img class="welcome-image" src="img/intro-welcome.svg" width="458" height="352" alt="Welcome -to the gorgeous- Sedona Because the grand canyon sucks!">
-            </section>
+            </div>
             <div class="background-logo">
-                <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
-            <section class="info-head element">
-                <div class="info-main">
-                    <h2>Настоящий городок</h2>
+            <section class=" element">
+                <div class="info info-main">
+                    <h2 class="textual">Настоящий городок</h2>
                     <span>- №1 -</span>
                     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
@@ -42,50 +42,50 @@
                     <img src="img/sedona.jpg" width="800" height="256" alt="Красивый вид на ресторан и горы в городе Седона">
                 </div>
             </section>
-            <section class="info-item element">
+            <section class=" element">
                 <div class="info-content-item">
-                    <img class="home" src="img/icon-1.svg" width="75" height="72" alt="иконка домика">
-                    <h2 class="info-content">Жилье</h2>
+                    <img class="home" src="img/icon-1.svg" width="75" height="73" alt="иконка домика">
+                    <h2 class="textual info-content">Жильё</h2>
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 
                 </div>
                 <div class="info-content-item">
-                    <img class="eat" src="img/icon-3.svg" width="74" height="70" alt="иконка бургера">
-                    <h2 class="info-content">Еда</h2>
+                    <img class="eat" src="img/icon-3.svg" width="75" height="73" alt="иконка бургера">
+                    <h2 class="textual info-content">Еда</h2>
                     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 
                 </div>
                 <div class="info-content-item">
-                    <img class="souvenirs" src="img/icon-2.svg" width="64" height="76" alt="иконка подарка">
-                    <h2 class="info-content">Сувениры</h2>
+                    <img class="souvenirs" src="img/icon-2.svg" width="78" height="74" alt="иконка подарка">
+                    <h2 class="textual info-content">Сувениры</h2>
                     <p>Не только китайского, но и местного производства!</p>
                 </div>
             </section>
-            <section class="info-block element">
+            <section class=" element">
                 <div class="img">
                     <img class="bridge" src="img/devil-bridge.jpg" width="800" height="256" alt="Здесь мост Дьявола">
                 </div>
                 <div class="info-main">
-                    <h2>Там есть Мост Дьявола</h2>
+                    <h2 class="textual headline">Там есть Мост Дьявола</h2>
                     <span>— №2 —</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <p class="paragraph">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </section>
             <section class="content element">
                 <div class="content-main">
-                    <h2>Небольшая площадь</h2>
+                    <h2 class="textual">Небольшая площадь</h2>
                     <span>— №3 —</span>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="content-main">
-                    <h2>Красивая дорога</h2>
+                    <h2 class="textual">Красивая дорога</h2>
                     <span>— №4 —</span>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="content-main">
-                    <h2>Мало туристов</h2>
+                    <h2 class="textual">Мало туристов</h2>
                     <span>— №5 —</span>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                    <p class="paragraph">Большинство едет в гранд каньон и толпится там</p>
                 </div>
             </section>
             <section class="info-content element">
@@ -111,11 +111,11 @@
                     </label>
                     <input type="text" name="date-of-departure" value="4 июля 2017" id="date-of-departure">
                     <div class="sum-adults">
-                        <label for="adults">Взрослые:</label>
+                        <label class="adult" for="adults">Взрослые:</label>
                         <button type="button" name="minus-adult"><span class="icon-minus"><img src="img/minus.png" width="12" height="3" alt=""></span></button>
                         <input type="text" name="adults" value="2" id="adults">
                         <button type="button" name="plus-adult"><span class="icon-plus"><img src="img/plus.png" width="11" height="11" alt=""></span></button>
-                        <label for="children">Дети:</label>
+                        <label class="children" for="children">Дети:</label>
                         <button type="button" name="minus-children"><span class="icon-minus"><img src="img/minus.png" width="12" height="3" alt=""></span></button>
                         <input type="text" name="children" value="0" id="children">
                         <button type="button" name="plus-children"><span class="icon-plus"><img src="img/plus.png" width="11" height="11" alt=""></span></button>
@@ -127,7 +127,6 @@
         <footer class="main-footer footer">
             <div class="footer-contacts">
                 <a class="tag-link" href="#">#VisitSedona</a>
-                <a class="phone" href="tel:+74956660266">tel:+7(495)666-02-66</a>
             </div>
             <div class="footer-social">
                 <a href="#" class="social-button icon-tw">Twitter</a>
@@ -135,14 +134,15 @@
                 <a href="#" class="social-button icon-yt">YouTube</a>
             </div>
             <div class="footer-copyright">
-                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-                <p class="footer-text">Website by</p>
+                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <span class="footer-text">Website by</span>
+                    <div class="footer-logo"></div>
+                </a>
             </div>
-            <div class="footer-logo"></div>
         </footer>
     </div>
     <script src="js/search-form.js">
-</script>
+    </script>
 </body>
 
 </html>
