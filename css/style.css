@@ -727,36 +727,34 @@ body {
     width: 10px;
 }
 .sorting-ab span {
+    display: none;
+}
+.sorting-ab a {
     color: #cccccc;
-    font-size: 23px;
+    font-size: 14px;
     line-height: 20px;
+    text-decoration: none;
 }
 .icon-up-dir::before, .icon-down-dir::before {
     margin: 0;
-    text-decoration: none;
     font-size: 15px;
     margin-left: 2px;
 }
 .icon-up-dir::before {
     content: "\25b2";
+    text-align: center;
+    font-variant: normal;
 }
 .icon-down-dir::before {
     content: "\25bc";
-}
-.sorting-ab .active {
     color: #81b3d2;
-}
-[class^="icon-"]::before, [class*=" icon-"]::before {
-    display: inline-block;
-    width: 16px;
-    font-weight: normal;
-    line-height: 16px;
-    font-family: "symbols-sedona";
     text-align: center;
-    text-transform: none;
-    font-style: normal;
     font-variant: normal;
 }
+.icon-up-dir:hover{
+  color: #000000;
+}
+
 .info-results {
     background: #fefefe;
     flex-direction: column;
@@ -912,36 +910,36 @@ body {
   content: "";
   background: #81b3d2;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   padding: 12px 10px;
   margin-left: 6px;
+  width: 26px;
+  height: 24px;
+}
+.footer-social span{
+  display: none;
 }
 .footer-social a:hover{
   background: #6ea8cc;
 }
-.icon-twitter::before {
+.icon-tw::before {
     content: url(../img/t.png);
-    background-image: ;
-}
-.icon-facebook::before {
-    content: url(../img/fb-icon.png);:
-}
-.icon-youtube::before {
-    content: url(../img/youtube.png);
-}
-[class^="icon-"]::before, [class*=" icon-"]::before {
-    display: inline-block;
-    width: 16px;
-    margin-right: 5px;
-    margin-left: 4px;
-    font-weight: normal;
-    line-height: 16px;
+    padding-left: 5px;
     text-align: center;
-    text-transform: none;
-    font-style: normal;
-    font-variant: normal;
+    vertical-align: middle;
+}
+.icon-fb::before {
+    content: url(../img/fb-icon.png);
+    padding-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.icon-yt::before {
+    content: url(../img/youtube.png);
+    padding-left: 3px;
+    text-align: center;
     vertical-align: middle;
 }
 .footer-copyright {
